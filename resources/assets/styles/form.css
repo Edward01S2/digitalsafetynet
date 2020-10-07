@@ -1,0 +1,47 @@
+.gfield {
+  @apply mb-4 md:flex md:items-center md:w-full;
+  input, select, textarea {
+    @apply rounded border border-gray-300 w-full py-2 px-4;
+  }
+  .gfield_label {
+    @apply inline-block text-left mb-1 md:w-1/4 md:text-right pr-8;
+  }
+  .ginput_container {
+    @apply md:w-3/4;
+  }
+  &.gfield_error {
+    input, select, textarea {
+      @apply border-2 border-red-500;
+    }
+  }
+  textarea {
+    @apply h-40;
+  }
+}
+
+.gfield_visibility_hidden {
+  @apply hidden;
+}
+.validation_message {
+  @apply hidden;
+}
+.validation_error {
+  @apply text-red-500 px-0 mb-4 md:mb-4 md:w-4/5 md:mx-auto md:text-center;
+}
+.gform_footer {
+  @apply md:flex md:justify-end;
+  .gform_button {
+    @apply bg-c-orange-100 text-white py-3 uppercase font-extrabold tracking-widest shadow-md w-full cursor-pointer hover:bg-c-blue-200 transition duration-150 md:w-3/4;
+  }
+}
+.gfield_required {
+  @apply hidden;
+}
+
+.gform_validation_container {
+  @apply hidden;
+}
+
+.gform_ajax_spinner {
+  @apply hidden;
+}

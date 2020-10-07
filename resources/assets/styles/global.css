@@ -1,0 +1,11 @@
+/**
+ * Global
+ */
+
+ html {
+   @apply font-open text-c-blue-200;
+ }
+
+ a {
+   @apply transition duration-150;
+ }
